@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Walid Alsadeq - Webpage Template</title>
+    <title>Walid Alsadeq - Enhanced Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -53,51 +53,117 @@
             background: #222;
             color: #fff;
         }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .project-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
 
-    <header>
+    <header id="top">
         <h1>Welcome to Walid Alsadeq’s Website</h1>
-        <p>A simple HTML5 webpage template</p>
+        <p>A simple HTML5 webpage template — now enhanced!</p>
+        <img src="https://via.placeholder.com/1000x250.png?text=Website+Banner" alt="Website banner" width="1000" height="250">
     </header>
 
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#top">Go to Top (Bookmark)</a>
     </nav>
 
     <main>
         <section id="home">
             <h2>Home</h2>
-            <p>This webpage was created as part of Lesson 2: Building a Webpage Template with HTML5. It demonstrates proper HTML structure, semantic elements, and clean layout design.</p>
+            <p>This webpage demonstrates how to enhance a website with links, images, divs, lists, and an embedded map.</p>
+            <p>Visit my <a href="about.html">About Page (Relative Link)</a> or learn more from 
+               <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs (Absolute Link)</a>.
+            </p>
         </section>
 
         <section id="about">
             <h2>About Me</h2>
-            <p>My name is <strong>Walid Alsadeq</strong>. I’m passionate about web design and development. I enjoy creating clean, responsive, and user-friendly websites that are both functional and visually appealing.</p>
+            <p>My name is <strong>Walid Alsadeq</strong>. I’m passionate about web design and development. I enjoy creating clean, responsive, and user-friendly websites.</p>
+
+            <div class="project-box">
+                <h3>Contact Options</h3>
+                <p>You can reach me by:
+                    <ul>
+                        <li><a href="mailto:contact@waliiidr.com">Email (mailto link)</a></li>
+                        <li><a href="tel:+11234567890">Phone (telephone link)</a></li>
+                    </ul>
+                </p>
+            </div>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
-            <p>Here are a few examples of what could go in this section:</p>
-            <ul>
-                <li>HTML5 Layout Project</li>
-                <li>Personal Portfolio</li>
-                <li>Responsive Webpage Design</li>
-            </ul>
+
+            <div class="project-box">
+                <h3>Project Gallery</h3>
+                <p>Click the image below to visit my YouTube page (Image Link example):</p>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="https://via.placeholder.com/400x200.png?text=Click+to+Visit+YouTube" alt="YouTube link image" width="400" height="200">
+                </a>
+            </div>
+
+            <div class="project-box">
+                <h3>Example Lists</h3>
+                <p>Here are examples of different types of lists:</p>
+
+                <h4>Unordered List:</h4>
+                <ul>
+                    <li>HTML5 Layout Project</li>
+                    <li>Personal Portfolio</li>
+                    <li>Responsive Webpage Design</li>
+                </ul>
+
+                <h4>Ordered List:</h4>
+                <ol>
+                    <li>Plan your layout</li>
+                    <li>Write clean HTML</li>
+                    <li>Validate your code</li>
+                </ol>
+
+                <h4>Description List:</h4>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>HyperText Markup Language – the structure of webpages.</dd>
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets – used to style and format webpages.</dd>
+                </dl>
+            </div>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
             <p>If you'd like to get in touch, please email me at: <a href="mailto:contact@waliiidr.com">contact@waliiidr.com</a></p>
+            
+            <h3>Our Location</h3>
+            <p>Visit us in New York, NY:</p>
+            <div style="border:1px solid #ccc; border-radius:10px; overflow:hidden;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.995029073692!2d-74.00601558459255!3d40.712728179330744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjgiTiA3NMKwMDAnMjEuMyJX!5e0!3m2!1sen!2sus!4v1632528422005!5m2!1sen!2sus"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Walid Alsadeq. All Rights Reserved.</p>
+        <p><a href="#top" style="color: #fff;">Back to Top</a></p>
     </footer>
 
 </body>
